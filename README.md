@@ -2,7 +2,7 @@
 
 This is a mini plugin for [TPM](https://github.com/tmux-plugins/tpm).
 
-This plugin display current selected input source, but only 'U.S.' or not.<br>
+This plugin display current selected input source, but only 'Japanese' or not.<br>
 And only work on recent OS X.
 
 inspired by knakayama's blog aritcle & tmux plugins<br>
@@ -13,7 +13,7 @@ inspired by knakayama's blog aritcle & tmux plugins<br>
 
 ## Requirements
 
-* [OS X](http://www.apple.com/osx/)
+* OS X (Yosemite, El Capitan)
 * [tmux](https://tmux.github.io/)
 * [tpm](https://github.com/tmux-plugins/tpm)
 

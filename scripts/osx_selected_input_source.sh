@@ -4,12 +4,14 @@ ja_icon="⦿ "
 us_icon="★ "
 
 main() {
-  local _input="$(echo $(defaults read com.apple.HIToolbox AppleSelectedInputSources | xargs | cut -d';' -f3 | cut -d'=' -f2))"
-  if [ "${_input}" = "Input Mode" -o "${_input}" = "com.apple.inputmethod.Kotoeri" ]; then
-    printf "$ja_icon"
-  else
-    printf "$us_icon"
-  fi
+  local _input=$(echo $(defaults read com.apple.HIToolbox AppleSelectedInputSources  | xargs) | tr "[:upper:]" "[:lower:]")
+
+  case $_input in
+    *japanese*)
+      printf "$ja_icon";;
+    *)
+      printf "$us_icon";;
+  esac
 }
 
 main
