@@ -24,7 +24,7 @@ inspired by knakayama's blog aritcle & tmux plugins<br>
 
 ## Requirements
 
-* macOS (Yosemite, El Capitan)
+* macOS (Yosemite, El Capitan, Sierra)
 * [tmux](https://tmux.github.io/)
 * [tpm](https://github.com/tmux-plugins/tpm)
 
