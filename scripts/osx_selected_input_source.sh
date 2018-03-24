@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-ja_icon="⦿ "
-us_icon="★ "
+ja_icon="あ"
+us_icon="U.S."
 
 main() {
   local _input=$(echo $(defaults read com.apple.HIToolbox AppleSelectedInputSources  | xargs) | tr "[:upper:]" "[:lower:]")
