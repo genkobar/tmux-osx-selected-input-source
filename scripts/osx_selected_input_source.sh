@@ -1,12 +1,17 @@
 #!/usr/bin/env bash
 
 ja_icon="あ"
-us_icon="U.S."
+us_icon="🇺🇸"
+is_icon="🇮🇸"
 
 main() {
-  local _input=$(echo $(defaults read com.apple.HIToolbox AppleSelectedInputSources  | xargs) | tr "[:upper:]" "[:lower:]")
+  local _input=$(echo $(defaults read com.apple.HIToolbox AppleSelectedInputSources  \
+    | xargs) \
+    | tr "[:upper:]" "[:lower:]")
 
   case $_input in
+    *icelandic*)
+      printf "$is_icon";;
     *japanese*)
       printf "$ja_icon";;
     *)
